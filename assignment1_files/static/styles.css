@@ -1,0 +1,146 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: gold;
+    padding: 20px;
+    font-size: 2em;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background-color: gold;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+table tr {
+    background-color: dimgray;
+}
+
+table tr:nth-child(even) {
+    background-color: gray;
+}
+
+table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid darkgray;
+}
+
+table td a.edit-btn {
+    background-color: gold;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 5px; 
+    display: inline-block;
+    text-align: center;
+}
+
+table td a.edit-btn:hover {
+    background-color: orange;
+    color: black;
+}
+
+table td form input[type="submit"].delete-btn {
+    background-color: red;
+    color: white;
+    padding: 8px 16px;
+}
+
+table td form input[type="submit"].delete-btn:hover {
+    background-color: darkred;
+}
+
+form {
+    margin: 20px auto;
+    width: 60%;
+    padding: 8px;
+}
+
+form label {
+    color: gold;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"], form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: dimgray;
+    color: white;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Form submit button hover */
+form input[type="submit"]:hover {
+    background-color: orange;
+}
+
+a {
+    color: gold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:visited {
+    color: gold;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:active {
+    color: orange;
+}
+
+a[href="{{ url_for('add_movie') }}"] {
+    display: block;
+    width: 200px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 8px;
+    font-size: 16px;
+    color: gold;
+    border: 1px solid gold;
+}
+
+a[href="{{ url_for('add_movie') }}"]:hover {
+    background-color: gold;
+    color: black;
+}
