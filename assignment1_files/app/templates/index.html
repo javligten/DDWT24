@@ -8,6 +8,17 @@
 </head>
 <body>
     <h1>Movies List</h1>
+    
+    <div>
+        {% if current_user.is_authenticated %}
+            <p>Welcome, {{ current_user.username }}!</p>
+            <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+        {% else %}
+            <a href="{{ url_for('login') }}" class="login-btn">Login</a>
+        {% endif %}
+    </div>
+
+    <br>
 
     <table border="1">
         <tr>
