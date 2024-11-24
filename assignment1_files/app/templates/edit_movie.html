@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Edit Movie</title>
+</head>
+<body>
+    <h1>Edit Movie</h1>
+
+    <form action="{{ url_for('edit_movie', id=movie.id) }}" method="POST">
+        <label for="name">Movie Name:</label><br>
+        <input type="text" id="name" name="name" value="{{ movie.name }}" required><br><br>
+
+        <label for="year">Year:</label><br>
+        <input type="number" id="year" name="year" value="{{ movie.year }}" required><br><br>
+
+        <label for="awards">Awards:</label><br>
+        <input type="number" id="awards" name="awards" value="{{ movie.awards }}" required><br><br>
+
+        <input type="submit" value="Save Changes">
+    </form>
+
+    <br>
+    <a href="{{ url_for('index') }}">Back to Movies List</a>
+</body>
+</html>
