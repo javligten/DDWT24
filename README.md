@@ -19,7 +19,7 @@ The application includes a custom 404 error handler that returns an error messag
 
 Installation:
 1. Clone this repository to your local machine:
-git clone <repository_url>
+git clone <https://github.com/javligten/DDWT24.git>
 cd <repository_directory>
 
 2. Create a virtual environment and activate it:
