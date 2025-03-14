@@ -1,4 +1,4 @@
-# DDWT24_w3
+# DDWT24
 
 This assignment is a web application that connects to an SQLite database to manage movies. The user can view the list of movies, add new movies and delete or edit movies from the database. Access to these features is protected by a user authentication system, ensuring that only registered and logged-in users can perform these actions.
 
