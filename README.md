@@ -6,7 +6,7 @@ Features
 User Authentication: The application has a user registration and login system. Only logged-in users can access the movie database features.
 
 Movies Database
-Usercan view a list of movies stored in the database,
+Users can view a list of movies stored in the database,
 add new movies to the database,
 edit details of an existing movie,
 and delete a movie from the database.
