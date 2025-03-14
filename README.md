@@ -2,22 +2,22 @@
 
 This assignment is a web application that connects to an SQLite database to manage movies. The user can view the list of movies, add new movies and delete or edit movies from the database. Access to these features is protected by a user authentication system, ensuring that only registered and logged-in users can perform these actions.
 
-Features
+Features:
 User Authentication: The application has a user registration and login system. Only logged-in users can access the movie database features.
 
-Movies Database
+Movies Database:
 Users can view a list of movies stored in the database,
 add new movies to the database,
 edit details of an existing movie,
 and delete a movie from the database.
 
-API Support
+API Support:
 All interactions with the movies (view, add, edit, delete) are exposed via an API using RESTful endpoints. The API is secured using JWT (JSON Web Token) authentication.
 
-Error Handling
+Error Handling:
 The application includes a custom 404 error handler that returns an error message when users attempt to access a non-existent page or endpoint.
 
-Installation
+Installation:
 1. Clone this repository to your local machine:
 git clone <repository_url>
 cd <repository_directory>
